@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port  = process.env.port || 3000;
+const port  = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, "/frontend")));
 
 app.set('view engine','pug');
@@ -26,7 +26,6 @@ app.get('/contact', (req,res) => {
 // app.get('/', (req,res) => {
 //   res.render(path.join(__dirname+'/frontend/htmlfiles/gallery.pug'));
 // });
-
 
 
 app.listen(port);

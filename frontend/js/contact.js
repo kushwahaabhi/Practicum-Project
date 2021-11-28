@@ -51,6 +51,7 @@ document.querySelector('.alert').style.display = 'none';
 },3000);
 
 // Clear form
+
 document.getElementById('contactForm').reset();
 }
 
@@ -72,7 +73,7 @@ return document.getElementById(id).value;
 // }
 
 function saveMessage(){
-set(ref(db, "Contact Data/" + getInputVal('name') ),{
+set(ref(db,  getInputVal('name') ),{
 Name: getInputVal('name'),
 Email: getInputVal('email'),
 Phone: getInputVal('phone'),
@@ -80,3 +81,10 @@ Message: getInputVal('message')
 })
 }
 
+document.getElementById("Buttons").addEventListener("click",()=>{
+ document.getElementById("name").value= null;
+ document.getElementById("email").value= null; 
+ document.getElementById("phone").value= null;
+  document.getElementById("message").value= null;
+  console.log('avgu');
+})
