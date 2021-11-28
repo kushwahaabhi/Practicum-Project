@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = process.env.PORT || 3000
-
+const port  = process.env.port || 3000;
 app.use(express.static(path.join(__dirname, "/frontend")));
 
 app.set('view engine','pug');
@@ -30,5 +29,5 @@ app.get('/contact', (req,res) => {
 
 
 
-app.listen(process.env.port || 3000);
-console.log('Web Server is listening at port '+ (process.env.port || 3000));
+app.listen(port);
+console.log('Web Server is listening at port '+ (port));
