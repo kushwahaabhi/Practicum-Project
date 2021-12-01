@@ -35,9 +35,7 @@ html{
     cursor: pointer;
   
 }
-.category span .activate{
-    color: blue;
-}
+
 .category p{
     padding-top: 15px;
 }
@@ -62,7 +60,7 @@ html{
 }
 .image{
     margin:12px;
-    height: 450px;
+    /* height: 450px; */
     width: 500px;
 }
 
@@ -75,11 +73,11 @@ display: none;
     }
 
 
-.desc{
+/* .desc{
 
     border: 2px solid red;
     height: 50px;
-}
+} */
 
 .reaction{
     display: flex;

@@ -24,16 +24,12 @@ html{
 }
 .image{
     margin:20px;
-    height: 450px;
+    /* height: 450px; */
     width: 500px;
 
 }
 
-.desc{
 
-    border: 2px solid red;
-    /* height: 50px; */
-}
 
 .reaction{
     display: flex;

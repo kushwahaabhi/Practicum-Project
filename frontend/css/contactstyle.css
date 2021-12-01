@@ -30,7 +30,7 @@ html{
 .contactthumbnail img{
     width: 200px;
     height: 200px;
-    border: 3px solid rgb(2, 2, 2);
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 50%;
     display: block;
     margin: auto;
@@ -97,7 +97,16 @@ html{
       display: flex;
       padding-top: 100px;
   }
-
+.alert{
+  height:400px;
+  width:550px;
+  background-color: white;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  animation: buttons .3s linear;
+  display: none;
+}
   @media only screen and (max-width: 973px){
   .contact{
       flex-direction: column;
