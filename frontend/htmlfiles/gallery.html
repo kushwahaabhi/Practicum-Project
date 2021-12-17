@@ -12,175 +12,178 @@
     <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/stylesocial.css">
     <link rel="shortcut icon" href="Image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/store.css">
     <title>Gallery</title>
 </head>
 <body>
-    <div class="navigation background navheight-resp">
-        <ul class=" nav-list visibility-resp">
-         <li class="logo">
-                <img src="../image/abhi.jpg" id="logoimage" alt="Logo">
-            <p>Shashank Kushwaha</p>
-          </li>
-            <div class="navigation_items">
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="store.html">STORE</a></li>
-            <li><a href="#gallery">GALLERY</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-            </div>
-        </ul>
-
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+  <div class="navigation background navheight-resp">
+    <div class=" act acti ">
+      <ul class=" nav-list visibility-resp">
+       <li class="logo">
+              <img src="../image/abhi.jpg" id="logoimage" alt="Logo">
+          <p>Shashank Kushwaha</p>
+        </li>
+          <div class="navigation_items">
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="store.html">STORE</a></li>
+          <li><a class="bluenav3" href="#gallery">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          </div>
+      </ul>
     </div>
 
-<div class="gallery">
+      <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+  </div>
+<div class="heightfix"></div>
+    <!-- <div class="gallery">
 
 
-    <div class="image">
-        <img src="../Image/costum.jpg" alt="Image">
-        <div class="desc">
-            <div class="reaction">
-               
-                <!-- <div id="heart" class="button1"><i class="fas fa-heart"></i></div> -->
-                <div class="share">
+        <div class="image" data-name="original" >
+      
+         <span>
+             <img src="../Image/techburner.jpg">
+            </span>
+          </div>
+        <div class="image" data-name="custom" >
+      
+            <span>
+                <img src="../Image/cl.jpg">
+               </span>
+          </div>
+        <div class="image" data-name="custom" >
+      
+              <span>
+                  <img src="../Image/cp.jpg">
+                 </span>
+          </div>
+        <div class="image" data-name="original" >
+      
+                <span>
+                    <img src="../Image/tucan.jpg">
+                   </span>
+          </div>
+      
+      </div> -->
 
+      <div class="gallery">
+        <!-- <div class="div">
+          <img class="img" src="../Image/techburner.jpg">
+          <h1 class="h1">Create a Back-End App with Javascript</h1>
+          <p class="p">Learn how to buld back-end web API's  using Express.js, Node.js, SQL, and...</p>
+      
+          <p2 class="p2">8 weeks</p2>
+        </div> -->
+      
+        <div class="image" data-name="original" >
+           <div class="imge">
+         
+             <img src="../Image/techburner.jpg">
+            </div>
+            <div class="discribtion">
+              <div class=" like likebtn  ">
+                <i id ="1" onclick="getId(this)" class="fas  fa-heart"></i>
+               <button class="buynow">Buy Now</button>
+              </div>
+              <div class="describe">
+              <p>Lorem ipsum dolor, sit amet conse </p>
+            </div>
+            </div>
+          </div>
+        <div class="image" data-name="custom" >
+      
+          <div class="imge"> 
+              <img src="../Image/cl.jpg">
+          </div> 
+          <div class="discribtion">
+            <div class=" like likebtn  "  >
+              <i id="2" onclick="getId(this)" class="fas  fa-heart"></i>
+              <button class="buynow">Buy Now</button>
+            </div>
+            <div class="describe">
+            <p>Lorem ipsum dolor, sit amet conse </p>
+          </div>
+          </div> 
+          </div>
+        <div class="image" data-name="custom" >
+      
+          <div class="imge"> 
+                  <img src="../Image/cp.jpg">
+                </div>  
+                <div class="discribtion">
+                  <div class=" like likebtn  ">
+                    <i id="3" onclick="getId(this)" class="fas  fa-heart"></i>
+                    <button class="buynow">Buy Now</button>
+                  </div>
+                  <div class="describe">
+                  <p>Lorem ipsum dolor, sit amet conse </p>
                 </div>
-            </div>
-            <div class="reaction1">
-                <div class="discribtion"></div>
-                <div class="buynow"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="image">
-        <img src="../Image/love.jpg" alt="Image">
-        <div class="desc">
-            <div class="reaction">
-                <div class="like">
-                    
                 </div>
-                <div class="share"></div>
-            </div>
-            <div class="reaction1">
-                <div class="discribtion"></div>
-                <div class="buynow"></div>
-            </div>
-        </div>
-    </div>
-    <div class="image">
-        <img src="../Image/ronaldo.jpg" alt="Image">
-        <div class="desc">
-            <div class="reaction">
-                <div class="like">
-                    
-                </div>
-                <div class="share"></div>
-            </div>
-            <div class="reaction1">
-                <div class="discribtion"></div>
-                <div class="buynow"></div>
-            </div>
-        </div>
-    </div>
-    <div class="image">
-        <img src="../Image/tucan.jpg" alt="Image">
-        <div class="desc">
-            <div class="reaction">
-                <div class="like">
-                    
-                </div>
-                <div class="share"></div>
-            </div>
-            <div class="reaction1">
-                <div class="discribtion"></div>
-                <div class="buynow"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="image">
-        <img src="../Image/techburner.jpg" alt="Image">
-        <div class="desc">
-            <div class="reaction">
-                <div class="like">
-                    
-                </div>
-                <div class="share"></div>
-            </div>
-            <div class="reaction1">
-                <div class="discribtion"></div>
-                <div class="buynow"></div>
-            </div>
-        </div>
-    </div>
-    <div class="image">
-        <img src="../Image/cp.jpg" alt="Image">
-        <div class="desc">
-            <div class="reaction">
-                <div class="like">
-                    
-                </div>
-                <div class="share"></div>
-            </div>
-            <div class="reaction1">
-                <div class="discribtion"></div>
-                <div class="buynow"></div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-
-    <section class="social background">
+          </div>
+        <div class="image" data-name="original" >
+          <div class="imge"> 
+                
+                    <img src="../Image/tucan.jpg">
+                  </div>  
+                  <div class="discribtion">
+                    <div class=" like likebtn  ">
+                      <i id="4" class="fas  fa-heart"></i>
+                      <button class="buynow">Buy Now</button>
+                    </div>
+                    <div class="describe">
+                    <p>Lorem ipsum dolor, sit amet conse </p>
+                  </div>
+                  </div>  
+          </div>
+      
+      </div>
+      <section class="social background">
         <div class="wrapper">
           <div class="button">
-       
-   
+        
     
     
-            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+    
+            <div class="icon"><a href="https://www.facebook.com/kushwaha0shashank" target="_blank" class="fab fa-facebook-f"></a> </div>
             <span><a href="https://www.facebook.com/kushwaha0shashank" target="_blank">Facebook</a> </span>
           </div>
          <div class="button">
-            <div class="icon"><i class="fab fa-twitter"></i></div>
+            <div class="icon"><a href="https://twitter.com/Abhishe98110899" target="_blank" class="fab fa-twitter"></a></div>
             <span><a href="https://twitter.com/Abhishe98110899" target="_blank">Twitter</a></span>
           </div>
           <div class="button">
-            <div class="icon"><i class="fab fa-instagram"></i></div>
+            <div class="icon"><a href="https://www.instagram.com/_kushwaha_shashank_" target="_blank" class="fab fa-instagram"></a> </div>
             <span><a href="https://www.instagram.com/_kushwaha_shashank_" target="_blank">Instagram</a></span>
           </div>
           <div class="button">
-            <div class="icon"><i class="far fa-envelope"></i></div>
+            <div class="icon"><a href="mailto:kushwahaabhi101@gmail.com" target="_blank" class="far fa-envelope"></a></div>
             <span><a href="mailto:kushwahaabhi101@gmail.com">Mail</a></span>
           </div>
           <div class="button">
-            <div class="icon"><i class="fab fa-linkedin"></i></div>
+            <div class="icon"><a href="https://linkedin.com/in/abhishek-kushwaha-a766a3201" target="_blank" class="fab fa-linkedin"></a></div>
             <span><a href="https://linkedin.com/in/abhishek-kushwaha-a766a3201" target="_blank">Linkedin</a></span>
           </div>
-    
+
           <div class="button">
-            <div class="icon"><i class="fab fa-youtube"></i></div>
+            <div class="icon"> <a href="https://www.youtube.com/channel/UCElXUo4m7F-hnP120USBsUw" target="_blank" class="fab fa-youtube"></a> </div>
             <span><a href="https://www.youtube.com/channel/UCElXUo4m7F-hnP120USBsUw" target="_blank">YouTube</a></span>
           </div>
         </div>
     
       </section>
     <footer class="background">
-      <div class="foot">
-            <div class="footar">
-              
-             <p >Copyright &copy; 2021 Shashank Kushwaha</p>
-                
-            </div>
+        <div class="foot">
+        <p class="footar">
+            Copyright &copy; 2021 Shashank Kushwaha
+        </p>
+        
         <p class="footr"><a href="privacy.html">Privacy Policy</a></p>
         <p class="footr"><a href="cancelation.html">Cancellation, Refund & Delivery</a></p>
-      </div>
+        
+    </div>
     </footer>
     <script src="../js/like.js"></script>
     <script src="../js/resp.js"></script>

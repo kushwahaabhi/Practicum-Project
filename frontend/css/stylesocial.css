@@ -8,51 +8,51 @@ padding: 0;
 font-family: 'Poppins', sans-serif;
 }
 html{
-    max-width: 2500px;
+    max-width: 160rem;
 }
 .social{
-padding-bottom: 60px;
-padding-top: 60px;
+padding-bottom: 1rem;
+padding-top: 1.5rem;
 display: flex;
 height: 100%;
 width: 100%;
-/* place-items: center; */
 justify-content: center;
 flex-wrap: wrap;
-/* background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%); */
+
 }
-/* .wrapper{
-    display: flex;
-    flex-direction: column;
-} */
+.wrapper{
+    justify-content: center;
+    align-items: center;
+}
 .wrapper .button{
 display: inline-block;
-height: 40px;
-width: 40px;
-/* float: left; */
+justify-content: center;
+height: 2.2rem;
+width: 2.2rem;
+
 align-items: center;
-margin: 0 20px;
+margin: 1rem;
 overflow: hidden;
 background: #fff;
-border-radius: 40px;
+border-radius: 2.2rem;
 cursor: pointer;
-box-shadow: 0px 6px 6px rgba(0,0,0,0.1);
+box-shadow: 0px 0.3rem 0.3rem rgba(0,0,0,0.1);
 transition: all 0.3s ease-out;
 }
 .wrapper .button a{
     text-decoration: none;
 }
 .wrapper .button:hover{
-width: 175px;
+width: 11rem;
 }
 .wrapper .button .icon{
 display: inline-block;
-height: 40px;
-width: 40px;
+height: 2.2rem;
+width: 2.2rem;
 text-align: center;
 border-radius: 50%;
 box-sizing: border-box;
-line-height: 40px;
+line-height: 2.2rem;
 transition: all 0.3s ease-out;
 }
 .wrapper .button:nth-child(1):hover .icon{
@@ -73,19 +73,23 @@ background: #E1306C;
 .wrapper .button:nth-child(6):hover .icon{
 background: #ff0000;
 }
-.wrapper .button .icon i{
-font-size: 22px;
-line-height: 40px;
+.wrapper .button .icon a{
+font-size: 1.5rem;
+line-height:2.2rem;
 transition: all 0.3s ease-out;
+text-decoration: none;
+/* align-items: center; */
+color: rgb(0, 0, 0);
 }
-.wrapper .button:hover .icon i{
+.wrapper .button:hover .icon a{
 color: #fff;
 }
+
 .wrapper .button span{
-font-size: 20px;
+font-size: 1.5rem;
 font-weight: 500;
-line-height: 40px;
-margin-left: 10px;
+line-height: 2.2rem;
+margin-left: 0.2rem;
 transition: all 0.3s ease-out;
 }
 .wrapper .button:nth-child(1) span a{
@@ -107,3 +111,67 @@ color: #0077b5;
 color: #ff0000;
 }
 
+@media only screen and (max-width: 973px){
+    .social{
+        padding-top: 0.8rem;
+        padding-bottom: 0.6rem;
+    }
+}
+@media only screen and (max-width: 570px){
+.social{
+    padding-top: 0.3rem;
+    padding-bottom: 0.2rem;
+}
+.wrapper .button:hover{
+width:1.1rem;
+}
+
+.wrapper .button:nth-child(1):hover .icon{
+background:unset;
+}
+.wrapper .button:nth-child(2):hover .icon{
+background: unset;
+}
+.wrapper .button:nth-child(3):hover .icon{
+background: unset;
+}
+.wrapper .button:nth-child(4):hover .icon{
+background: unset;
+}
+.wrapper .button:nth-child(5):hover .icon{
+background: unset;
+}
+.wrapper .button:nth-child(6):hover .icon{
+background: unset;
+}
+
+.wrapper .button:hover .icon a{
+color:unset;
+}
+
+.wrapper .button{
+height: 1.1rem;
+width: 1.1rem;
+border-radius: 1.1rem;
+margin:0.5rem;
+}
+
+
+.wrapper .button .icon{
+    display: block;
+    line-height: 1.1rem;
+    height: 1.1rem;
+    width: 1.1rem;
+    align-items: center;
+    font-size: 0.76rem;
+}
+.wrapper .button .icon a{
+    line-height: 1.1rem;
+    font-size: 0.75rem;
+}
+.wrapper .button span{
+    font-size: 0.75rem;
+    line-height: 1.1rem;
+    margin-left: 0.1rem;
+}
+}

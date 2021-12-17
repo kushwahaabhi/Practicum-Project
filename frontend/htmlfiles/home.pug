@@ -12,19 +12,20 @@ head
   // <link rel="html" href="contact.html" />
   title Worthy Wind
 .navigation.background.navheight-resp
-  ul.nav-list.visibility-resp
-    li.logo
-      img#logoimage(src='../image/abhi.jpg' alt='Logo')
-      p Shashank Kushwaha
-    .navigation_items
-      li
-        a(href='#home') HOME
-      li
-        a(href='/store') STORE
-      li
-        a(href='/gallery') GALLERY
-      li
-        a(href='/contact') CONTACT US
+  .act.acti
+    ul.nav-list.visibility-resp
+      li.logo
+        img#logoimage(src='../image/abhi.jpg' alt='Logo')
+        p Shashank Kushwaha
+      .navigation_items
+        li
+          a.bluenav1(href='#home') HOME
+        li
+          a(href='/store') STORE
+        li
+          a(href='/gallery') GALLERY
+        li
+          a(href='/contact') CONTACT US
   .burger
     .line
     .line
@@ -34,122 +35,67 @@ section#home.background.firstsection
     .fhalf
       p.heading
         | &quot; The aim of art is not to represent the outward appearance of things, but their inward significance &quot;
-      // <p class="content">"The aim of art is not to represent the outward appearance of things, ut their inward significance"</p>
       .buttons
         button#myButton.btn(onclick="window.location.href= '/gallery'") Visit Gallery
     .shalf.img
       img(src='../Image/logo.jpg' alt='IMAGE')
-section.section
-  .para
-    p.heading
-      | Custom Portraits
-    p.content
-      | Order a customized portrait
-      | of yourself, your pets &amp; your loved ones.
-  .thumbnail
-    img.firstimage(src='../Image/contactlogo.jpg' alt='Image')
-section.section.left
-  .para
-    p.heading
-      | Original Artwork
-    p.content
-      | You can purchase all the original works done in graphite, Acrylic, pencil colors and more.
-  .thumbnail
-    img.firstimage1(src='../Image/cl.jpg' alt='Image')
-//
-  <section class="section">
-  <div class="para">
-  <p class=" heading">
-  This is a webpage.
-  </p>
-  <p class=" content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
-  neque illum laborum magni quos perspiciatis modi expedita sed consequatur dolorem aspernatur impedit
-  pius quaerat ipsam, atque enim sit dolor asperiores
-  magni numquam suscipit explicabo obcaecati ex fuga, repellendus eveniet beatae laudantium architecto
-  voluptates quia eos corporis optio cum vel reprehenderit?
-  </p>
-  </div>
-  <div class="thumbnail">
-  <img src="Image/logo.jpg" alt="Image" class="firstimage">
-  </div>
-  </section>
-hr
-//
-  <section class="contact" id="contact">
-  <h2 class="text">CONTACT US</h2>
-  <div class="form">
-  <p> <input class="contact-form" type="text" name="name" required placeholder="Name"></p>
-  <p>  <input class="contact-form" type="email" name="email" id="email" required placeholder="Email"></p>
-  <p><input class="contact-form" type="text" name="number" id="phone" required placeholder="Phone Number"></p>
-  <textarea class="contact-form" name="text" id="" cols="30" rows="10" placeholder="Ellaborate your concern."></textarea>
-  <button class="btn_sm btnsm">Submit</button>
-  </div>
-  </section>
-//
-  <section class="social background">
-  <div class="socialm">
-  <div class="socialmf">
-  <div class="instagram">
-  <img src="Image/Insta.png" alt="Image" class="insta">
-  <p><a href="https://www.instagram.com/_kushwaha_shashank_">Instagram</a></p>
-  </div>
-  <div class="instagram">
-  <img src="Image/Facebook.png" alt="Image" class="socialimg">
-  <p><a href="https://www.facebook.com/kushwaha0shashank">Facebook</a></p>
-  </div>
-  </div>
-  <div class="socialms">
-  <div class="instagram">
-  <img src="Image/youtube.png" alt="Image" class="youtube">
-  <p><a href="https://www.youtube.com/channel/UCElXUo4m7F-hnP120USBsUw">YouTube</a></p>
-  </div>
-  <div class="instagram">
-  <img src="Image/mail.png" alt="Image" class="mail">
-  <p><a href="mailto:kushwahaabhi101@gmail.com">Mail</a></p>
-  </div>
-  </div>
-  </div>
-  </section>
+.focus
+  section.section
+    .para
+      p.heading
+        | Custom Portraits
+      p.content
+        | Order a customized portrait
+        | of yourself, your pets &amp; your loved ones.
+    .thumbnail
+      img.firstimage(src='../Image/contactlogo.jpg' alt='Image')
+.focus
+  section.section.left
+    .para
+      p.heading
+        | Original Artwork
+      p.content
+        | You can purchase all the original works done in graphite, Acrylic, pencil colors and more.
+    .thumbnail
+      img.firstimage1(src='../Image/cl.jpg' alt='Image')
 section.social.background
   .wrapper
     .button
       .icon
-        i.fab.fa-facebook-f
+        a.fab.fa-facebook-f(href='https://www.facebook.com/kushwaha0shashank' target='_blank')
       span
         a(href='https://www.facebook.com/kushwaha0shashank' target='_blank') Facebook
     .button
       .icon
-        i.fab.fa-twitter
+        a.fab.fa-twitter(href='https://twitter.com/Abhishe98110899' target='_blank')
       span
         a(href='https://twitter.com/Abhishe98110899' target='_blank') Twitter
     .button
       .icon
-        i.fab.fa-instagram
+        a.fab.fa-instagram(href='https://www.instagram.com/_kushwaha_shashank_' target='_blank')
       span
         a(href='https://www.instagram.com/_kushwaha_shashank_' target='_blank') Instagram
     .button
       .icon
-        i.far.fa-envelope
+        a.far.fa-envelope(href='mailto:kushwahaabhi101@gmail.com' target='_blank')
       span
         a(href='mailto:kushwahaabhi101@gmail.com') Mail
     .button
       .icon
-        i.fab.fa-linkedin
+        a.fab.fa-linkedin(href='https://linkedin.com/in/abhishek-kushwaha-a766a3201' target='_blank')
       span
         a(href='https://linkedin.com/in/abhishek-kushwaha-a766a3201' target='_blank') Linkedin
     .button
       .icon
-        i.fab.fa-youtube
+        a.fab.fa-youtube(href='https://www.youtube.com/channel/UCElXUo4m7F-hnP120USBsUw' target='_blank')
       span
         a(href='https://www.youtube.com/channel/UCElXUo4m7F-hnP120USBsUw' target='_blank') YouTube
 footer.background
   .foot
-    .footar
-      p Copyright &copy; 2021 Shashank Kushwaha
+    p.footar
+      | Copyright &copy; 2021 Shashank Kushwaha
     p.footr
       a(href='privacy.html') Privacy Policy
     p.footr
       a(href='cancelation.html') Cancellation, Refund &amp; Delivery
 script(src='../js/resp.js')
-script.
-

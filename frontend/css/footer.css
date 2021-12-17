@@ -1,16 +1,23 @@
 html{
-    max-width: 2500px;
+    max-width:160rem;
 }
 .footar{
   
-
+    width: 50%;
     color: white;
-    min-height: 35px;
-    padding-top: 25px;
-    padding-bottom: 30px;
+    min-height:3.4rem;
+    /* padding-top: 1.5rem; */
+    /* padding-bottom:2rem; */
+    
+    /* padding-right: 30%; */
+    /* float: left; */
+    display: flex;
+    /* justify-content:left; */
+    align-items: flex-start;
     padding-left:5%;
-    padding-right: 45%;
+    font-size: 1rem;
 }
+  
 
 .foot{
     display: flex;
@@ -18,55 +25,94 @@ html{
 
     margin: auto;
     text-align: center;
- 
+    /* font-size: 1rem; */
+    padding-bottom: 0.2rem;
 }
 .footr{
-    padding: 2%;
+    /* padding: 2%; */
     color: white;
- 
-    padding-top: 25px;
+    width: 25%;
+    
+    /* padding-top:1.5rem; */
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+    /* flex-direction: row-reverse; */
+    padding-right: 5%;
   
 }
 .footr p{
 display: inline-flex;
+
+    /* flex-direction: row-reverse; */
 }
 .footr a{
     color: white;
     text-decoration: none;
-    
+    font-size: 1rem;
 }
 .footr a:hover{
     color: gray;
 }
+@media only screen and (max-width: 1177px){
+    .footr a{
 
+        font-size:0.833rem;
+   } 
+   .footar{
+    font-size: 0.833rem;
 
-@media only screen and (max-width: 973px) {
+}
+}
+
+@media only screen and (max-width: 980px) {
 
 
 
     .footar{
-        text-align: center;
-        justify-content: center;
-        color: white;
-      
-        padding: unset;
-        padding-top: 12px;
-        padding-bottom: 1px;
-        flex-direction: row;
-
-        padding-top: 10px;
+    /* flex-direction: column; */
+    padding: unset;
+    justify-content: center;
+    width: 100%;
+    /* align-items: unset; */
+    min-height: unset;
+    padding: 0.2rem;
+    
+        padding-left: unset;
+        padding-right: unset;
+    
     }
     .foot{
-        flex-direction: column-reverse;
-      
+        flex-direction: column;
+      min-height: unset;
     }
 
     .footr{
         padding: unset;
-        padding-bottom: 10px;
-        padding-top: 10px;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    padding: 0.2rem;
+    }
+    .footr {
+        padding-left: unset;
+        padding-right: unset;
     }
 }
-    
+@media only screen and (max-width: 500px){
+    .footr a{
+
+        font-size:0.5rem;
+   } 
+   .footr {
+    padding-left: unset;
+    padding-right: unset;
+}
+   .footar{
+    font-size: 0.5rem;
+    padding-left: unset;
+    padding-right: unset;
+}
+} 
 
 

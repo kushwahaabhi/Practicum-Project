@@ -4,13 +4,18 @@
 }
 html{
   scroll-behavior: smooth;
-  max-width: 2500px;
+  max-width: 160rem;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
-
+.navigation_items li .bluenav1{
+    color:rgb(14, 155, 236);
+}
 .firstsection {
-    padding-top: 150px;
-   height: 80vh;
+    padding-top: 15rem;
+   height: max-content;
+   padding-bottom: 5rem;
 }
 .main {
     display: flex;
@@ -20,7 +25,7 @@ html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
     max-width: 50%;
-    height: 80%;
+    /* height: 80%; */
 }
 
 .fhalf {
@@ -33,14 +38,14 @@ justify-content: center;
 
 .shalf {
 width: 30%;
-padding-left: 70px;
+padding-left: 4.3rem;
 
 }
 
 .shalf img {
-    width: 220px;
-    height: 220px;
-    border: 3px solid white;
+    width: 11rem;
+    height: 11rem;
+    border: 0.19rem solid white;
     border-radius: 50%;
     display: block;
     margin: auto;
@@ -49,24 +54,24 @@ padding-left: 70px;
 }
 
 .heading {
-  font-size: 40px;
-
-  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
 }
 
 .content {
 
-  font-size: 20px;
-  padding: 10px 0px;
+  font-size: 1.5rem;
+  /* padding: 0.4rem 2em; */
   line-height: 1.6;
 }
 
 .btn {
-    padding: 8px 20px;
-    border: 3px solid white;
-    border-radius: 16px;
-    margin: 8px 0px;
-    font-size: 20px;
+    padding: 0.5rem 1.25rem;
+    border: 0.18rem solid white;
+    border-radius: 1rem;
+    margin: 0.5rem 0rem;
+    font-size: 1rem;
     color: white;
     background-color: none;
     cursor: pointer;
@@ -75,57 +80,73 @@ padding-left: 70px;
 
 .btn_sm {
     background: none;
-    padding: 6px 15px;
-    border: 2px solid white;
-    margin: 6px 0px;
-    border-radius: 8px;
+    padding: 0.37rem 1rem;
+    border: 0.125rem solid white;
+    margin: 0.37rem 0rem;
+    border-radius:0.5rem;
     color: white;
     cursor: pointer;
 } 
-
 .btn:hover{
     background: red;
 }
 
-.section {
 
-    align-items: center;
-    justify-content: space-evenly;
+.focus{
     display: flex;
-    max-width: 80%; 
-    width: 70%;  
+    height: max-content;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width:70%;
+    justify-content: center;
+    align-items: center;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    background: none;
+    background-color: white;
+    border-radius:2rem;
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    max-width: 80%; 
+    width: 70%;  
+    /* margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
 
-    padding-top: 30px;
+    padding-top: 1.8rem; */
 }
 .left {
     flex-direction: row-reverse;
-    margin-bottom: 200px;
+    /* margin-bottom: 12.5rem; */
 }
 
 .para {
-    padding:10 20px;
+    padding:0.625rem 1.25rem;
 }
 
  .firstimage{
-     margin-left: 30px;
-     padding: 10px;
-     width: 300px;
-     height: 300px;
-     border: 3px solid white;
+     margin-left: 1.8rem;
+     padding: 0.635rem;
+     width: 13rem;
+     height: 13rem;
+     border: 0.18rem solid white;
      border-radius: 50%;
      display: block;
    
  }
  .firstimage1{
-    margin-right: 30px;
-    padding: 10px;
-    width: 300px;
-    height: 300px;
-    border: 3px solid white;
+    margin-right: 1.8rem;
+    padding: 0.625rem;
+    width:13rem;
+    height:13rem;
+    border: 0.18rem solid white;
     border-radius: 50%;
     display: block;  
  
@@ -133,9 +154,9 @@ padding-left: 70px;
 
 .text {
     text-align: center;
-    padding: 5px;
-    font-size: 35px;
-    padding-top: 10px;
+    padding: 0.31rem;
+    font-size: 2rem;
+    padding-top: 0.6rem;
 } 
 
 
@@ -143,12 +164,74 @@ padding-left: 70px;
 
 
 @media only screen and (max-width: 973px){
+
+    .firstsection {
+        padding-top: 6rem;
+       height: max-content;
+       padding-bottom: 3rem;
+    }
+    .firstimage{
+        /* margin-left: 1.8rem; */
+        padding: 0.635rem;
+        width: 10rem;
+        height: 10rem;
+        border: 0.15rem solid white;
+        border-radius: 50%;
+        display: block;
+      
+    }
+    .firstimage1{
+       /* margin-right: 1.8rem; */
+       padding: 0.625rem;
+       width:10rem;
+       height:10rem;
+       border: 0.15rem solid white;
+       border-radius: 50%;
+       display: block;  
+    
+    }
+   
+   .text {
+       text-align: center;
+       padding: 0.31rem;
+       font-size: 1.5rem;
+       padding-top: 0.6rem;
+   } 
+
+    .shalf img {
+        width: 10rem;
+        height: 10rem;
+        border: 0.15rem solid white;
+    }
+    
+    .heading {
+      font-size: 1.5rem;
+    
+      margin-top: 2.5rem;
+    }
+    
+    .content {
+    
+      font-size: 1.2rem;
+      padding: 0.4rem 2rem;
+      line-height: 1.6;
+    }
+    
+    .btn {
+        padding: 0.5rem 1.25rem;
+        border: 0.15rem solid white;
+        border-radius: 1rem;
+        font-size: 0.8rem;
+
+    }
  
+
+
     .main{
         flex-direction: column-reverse;
         max-width: 100%;
    
-        height: 80vh;
+        /* height: 80vh; */
     }
 
     .section{
@@ -175,7 +258,7 @@ padding-left: 70px;
     .shalf{
         text-align: center;
         justify-content: center;
-        margin-top: 330px;
+        /* margin-top: 330px; */
         padding: unset;
     }
     .img{
@@ -197,17 +280,160 @@ padding-left: 70px;
         padding: 0px;
     }
 
-    .firstsection{
+    /* .firstsection{
         height: 122vh;
-    }
+    } */
+    .section {
 
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    
+        padding-top: 1rem;
+    }
 
 
 }
 
 
-@media only screen and (max-height: 667px){
-    .firstsection{
+@media only screen and (max-width: 667px){
+
+    .focus{
+        padding-top: unset;
+        padding-bottom: unset;
+    }
+    .section {
+
+ 
+        margin-top: 3rem;
+        margin-bottom: 2.5rem;
+    
+        padding-top: 1rem;
+    }
+    .firstsection {
+        padding-top: 6rem;
+       height: max-content;
+       padding-bottom: 2.8rem;
+    }
+
+    .firstimage{
+        /* margin-left: 1.8rem; */
+        padding: 0.635rem;
+        width: 8rem;
+        height: 8rem;
+        border: 0.15rem solid white;
+        border-radius: 50%;
+        display: block;
+      
+    }
+    .firstimage1{
+       /* margin-right: 1.8rem; */
+       padding: 0.625rem;
+       width:8rem;
+       height:8rem;
+       border: 0.15rem solid white;
+       border-radius: 50%;
+       display: block;  
+    
+    }
+   
+   .text {
+       text-align: center;
+       padding: 0.31rem;
+       font-size: 0.8rem;
+       padding-top: 0.6rem;
+   } 
+
+    .shalf img {
+        width: 8rem;
+        height: 8rem;
+        border: 0.15rem solid white;
+    }
+    
+    .heading {
+      font-size: 1rem;
+    
+      margin-top: 2.5rem;
+    }
+    
+    .content {
+    
+      font-size: 1rem;
+      padding: 0.4rem 2rem;
+      line-height: 1.6;
+    }
+    
+    .btn {
+        padding: 0.5rem 1.25rem;
+        border: 0.15rem solid white;
+        border-radius: 1rem;
+        font-size: 0.6rem;
+
+    }
+ 
+
+    /* .firstsection{
         height: 140vh;
+    } */
+}
+@media only screen and (max-width: 380px){
+    .firstsection {
+        padding-top: 6rem;
+       height: max-content;
+       padding-bottom: 2.5rem;
+    }
+
+    .firstimage{
+        /* margin-left: 1.8rem; */
+        padding: 0.635rem;
+        width: 6rem;
+        height: 6rem;
+        border: 0.15rem solid white;
+        border-radius: 50%;
+        display: block;
+      
+    }
+    .firstimage1{
+       /* margin-right: 1.8rem; */
+       padding: 0.625rem;
+       width: 6rem;
+       height:6rem;
+       border: 0.15rem solid white;
+       border-radius: 50%;
+       display: block;  
+    
+    }
+   
+   .text {
+       text-align: center;
+       padding: 0.31rem;
+       font-size: 0.5rem;
+       padding-top: 0.6rem;
+   } 
+
+    .shalf img {
+        width: 6rem;
+        height: 6rem;
+        border: 0.15rem solid white;
+    }
+    
+    .heading {
+      font-size: 0.8rem;
+    
+      margin-top: 2rem;
+    }
+    
+    .content {
+    
+      font-size: 0.8rem;
+      padding: 0.4rem 2rem;
+      line-height: 1.2;
+    }
+    
+    .btn {
+        padding: 0.5rem 1.25rem;
+        border: 0.15rem solid white;
+        border-radius: 1rem;
+        font-size: 0.6rem;
+
     }
 }

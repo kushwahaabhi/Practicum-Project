@@ -1,0 +1,28 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+.checkout{
+padding-top: 10rem;
+display: flex;
+height: 70rem;
+flex-direction: row;
+}
+.leftside{
+    display:block;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+.photo{
+display: flex;
+justify-content: center;
+/* width: 60%; */
+}
+.leftside img{
+    width: 60%;
+    padding:1.5rem;
+}

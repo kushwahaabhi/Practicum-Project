@@ -1,11 +1,11 @@
 const filterItem = document.querySelector(".items");
 const filterImg = document.querySelectorAll(".gallery .image");
-const act = document.querySelector(".items");
+const actaa = document.querySelector(".items");
 window.onload = ()=>{ 
-act.onclick = (selectedItem)=>{ 
+actaa.onclick = (selectedItem)=>{ 
  
   if(selectedItem.target.classList.contains("item")){ 
-    act.querySelector(".activate").classList.remove("activate");
+    actaa.querySelector(".activate").classList.remove("activate");
     selectedItem.target.classList.add("activate");
   }
 } 
